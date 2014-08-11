@@ -11,10 +11,10 @@ Editor. And that is what gave the beginning to this theme.
 
 This theme is carefully crafted to be easy on the eyes. It is not a 100% copy
 of Espresso, it is in a sence an extension of it. I have tried to eliminate
-most of the Espresso CSSEdit theme shortcoming such as markdown coloring, added
-improved support for `Pangloss/javascript` syntax definition and tried to make
-its as logically consistent as I could in other languages such as `python`,
-`ruby`, `C++`, `Java`.
+most of the Espresso CSSEdit theme shortcomings such as markdown coloring, adding
+improved support for `Pangloss/javascript` syntax definition and trying to make
+it as logically consistent as I could in other languages such as `python`,
+`ruby`, `C++` and `Java`.
 
 ## Installation
 
