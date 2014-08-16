@@ -307,7 +307,7 @@ call s:HL('cssClassName', 'red','NONE','NONE')
 call s:HL('cssValueLength', 'magenta','faintMagenta','NONE')
 call s:HL('cssValueNumber', 'magenta','faintMagenta','NONE')
 call s:HL('cssCommonAttr', 'NONE','NONE','NONE')
-call s:HL('cssBraces', 'dark0','NONE','NONE')
+call s:HL('cssBraces', 'dark4','NONE','NONE')
 
 " Vim: {{{2
 call s:HL('vimCommentTitle', 'red','NONE','NONE')
