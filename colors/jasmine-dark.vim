@@ -142,7 +142,7 @@ call s:HL('Folded', 'dark4','dark1','NONE')
 call s:HL('FoldColumn', 'blue', 'dark1', 'bold')
 
 " SignColumn: {{{2
-call s:HL('SignColumn', 'blue', 'light1', 'bold')
+call s:HL('SignColumn', 'blue', 'dark2', 'bold')
 
 " Paranthesis: {{{2
 call s:HL('MatchParen', 'red','NONE','NONE')
