@@ -292,6 +292,10 @@ call s:HL('jsRegexpQuantifier', 'magenta','NONE','NONE')
 call s:HL('jsRegexpOr', 'magenta','NONE','NONE')
 call s:HL('jsRegexpGroup', 'magenta','faintMagenta','NONE')
 
+" Kchmck CoffeeScript: {{{2
+call s:HL('coffeeObjAssign', 'red', 'NONE', 'NONE')
+call s:HL('coffeeObject',  'lightBlue','faintBlue', 'NONE')
+call s:HL('coffeeParen', 'green', 'NONE', 'NONE')
 " Yaml: {{{2
 call s:HL('yamlKey', 'blue','NONE','NONE')
 call s:HL('yamlAnchor', 'NONE','NONE','NONE')

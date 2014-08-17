@@ -17,9 +17,9 @@ let g:colors_name = "Jasmine"
 let s:ce = {}
 
 let s:ce.dark0        = ['#151515', 16]
-let s:ce.dark1        = ['#474747', 59]
-let s:ce.dark2        = ['#A3A3A3', 145]
-let s:ce.dark3        = ['#B1B1B1', 145]
+let s:ce.dark1        = ['#464646', 59]
+let s:ce.dark2        = ['#7E7E7E', 145]
+let s:ce.dark3        = ['#959595', 145]
 let s:ce.dark4        = ['#BFBFBF', 145]
 let s:ce.light4       = ['#C9C9C9', 188]
 let s:ce.light3       = ['#DCDCDC', 188]
@@ -291,6 +291,11 @@ call s:HL('jsRegexpBoundary', 'magenta','NONE','NONE')
 call s:HL('jsRegexpQuantifier', 'magenta','NONE','NONE')
 call s:HL('jsRegexpOr', 'magenta','NONE','NONE')
 call s:HL('jsRegexpGroup', 'magenta','faintMagenta','NONE')
+
+" Kchmck CoffeeScript: {{{2
+call s:HL('coffeeObjAssign', 'red', 'NONE', 'NONE')
+call s:HL('coffeeObject',  'lightBlue','faintBlue', 'NONE')
+call s:HL('coffeeParen', 'green', 'NONE', 'NONE')
 
 " Yaml: {{{2
 call s:HL('yamlKey', 'blue','NONE','NONE')
