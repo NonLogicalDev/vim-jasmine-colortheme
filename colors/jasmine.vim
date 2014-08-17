@@ -16,7 +16,7 @@ let g:colors_name = "Jasmine"
 " Color Pallette: {{{
 let s:ce = {}
 
-let s:ce.dark0        = ['#000000', 16]
+let s:ce.dark0        = ['#151515', 16]
 let s:ce.dark1        = ['#474747', 59]
 let s:ce.dark2        = ['#A3A3A3', 145]
 let s:ce.dark3        = ['#B1B1B1', 145]
@@ -312,7 +312,11 @@ call s:HL('cssBraces', 'dark0','NONE','NONE')
 " Vim: {{{2
 call s:HL('vimCommentTitle', 'red','NONE','NONE')
 call s:HL('vimIsCommand', 'blue','NONE','NONE')
-
+" MakeFile:
+call s:HL('makeStatement', 'magenta' , 'NONE', 'NONE')
+call s:HL('makeCommands', 'blue' , 'NONE', 'NONE')
+call s:HL('makeIdent', 'green' , 'faintGreen', 'NONE')
+call s:HL('makeSpecTarget', 'red' , 'faintRed', 'bold')
 " }}}1
 " Plugins: {{{1
 " Ycm: {{{2
@@ -328,7 +332,6 @@ call s:HL('CTagsClass', 'magenta', 'NONE', 'NONE')
 call s:HL('CTagsMember', 'green', 'NONE', 'NONE')
 
 " Better Rainbow Parentheses: {{{2
-
 let g:rbpt_colorpairs = [
       \ ['brown',       '#458588'],
       \ ['Darkblue',    '#b16286'],
