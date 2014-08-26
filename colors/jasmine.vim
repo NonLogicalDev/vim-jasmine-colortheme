@@ -212,7 +212,7 @@ call s:HL('rubyClass', 'magenta','NONE','NONE')
 call s:HL('rubyModule', 'magenta','NONE','NONE')
 call s:HL('rubyFunction', 'NONE','NONE','bold')
 call s:HL('rubyInterpolationDelimiter', 'NONE','NONE','NONE')
-call s:HL('rubySymbol', 'magenta','NONE','NONE')
+call s:HL('rubySymbol', 'green','NONE','NONE')
 call s:HL('rubyConstant', 'NONE','NONE','NONE')
 call s:HL('rubyStringDelimiter', 'lightOrange','faintOrange','NONE')
 call s:HL('rubyInterpolation', 'NONE','faintOrange','NONE')
@@ -279,7 +279,7 @@ call s:HL('jsNull', 'magenta','faintMagenta','NONE')
 call s:HL('jsFunction', 'magenta','NONE','NONE')
 call s:HL('jsFuncName', 'darkMagenta','NONE','bold')
 call s:HL('jsFunctionKey', 'darkMagenta','NONE','bold')
-call s:HL('jsObjectKey', 'red','NONE','NONE')
+call s:HL('jsObjectKey', 'green','NONE','NONE')
 call s:HL('jsGlobalObjects', 'blue','faintBlue','NONE')
 call s:HL('jsException', 'red','faintRed','NONE')
 call s:HL('jsConditional', 'magenta','NONE','NONE')
@@ -293,7 +293,7 @@ call s:HL('jsRegexpOr', 'magenta','NONE','NONE')
 call s:HL('jsRegexpGroup', 'magenta','faintMagenta','NONE')
 
 " Kchmck CoffeeScript: {{{2
-call s:HL('coffeeObjAssign', 'red', 'NONE', 'NONE')
+call s:HL('coffeeObjAssign', 'green', 'NONE', 'NONE')
 call s:HL('coffeeObject',  'lightBlue','faintBlue', 'NONE')
 call s:HL('coffeeParen', 'green', 'NONE', 'NONE')
 
@@ -322,6 +322,11 @@ call s:HL('makeStatement', 'magenta' , 'NONE', 'NONE')
 call s:HL('makeCommands', 'blue' , 'NONE', 'NONE')
 call s:HL('makeIdent', 'green' , 'faintGreen', 'NONE')
 call s:HL('makeSpecTarget', 'red' , 'faintRed', 'bold')
+" Haskell: {{{2
+call s:HL('hs_hlFunctionName', 'blue' , 'faintBlue', 'NONE')
+call s:HL('hs_DeclareFunction', 'green' , 'faintBlue', 'bold')
+call s:HL('hsType', 'red' , 'NONE', 'NONE')
+call s:HL('hsDelimiter', 'green' , 'faintBlue', 'NONE')
 " }}}1
 " Plugins: {{{1
 " Ycm: {{{2
@@ -337,24 +342,24 @@ call s:HL('CTagsClass', 'magenta', 'NONE', 'NONE')
 call s:HL('CTagsMember', 'green', 'NONE', 'NONE')
 
 " Better Rainbow Parentheses: {{{2
-let g:rbpt_colorpairs = [
-      \ ['brown',       '#458588'],
-      \ ['Darkblue',    '#b16286'],
-      \ ['darkgray',    '#cc241d'],
-      \ ['darkgreen',   '#d65d0e'],
-      \ ['darkcyan',    '#458588'],
-      \ ['darkred',     '#b16286'],
-      \ ['darkmagenta', '#cc241d'],
-      \ ['brown',       '#d65d0e'],
-      \ ['gray',        '#458588'],
-      \ ['black',       '#b16286'],
-      \ ['darkmagenta', '#cc241d'],
-      \ ['Darkblue',    '#d65d0e'],
-      \ ['darkgreen',   '#458588'],
-      \ ['darkcyan',    '#b16286'],
-      \ ['darkred',     '#cc241d'],
-      \ ['red',         '#d65d0e'],
-      \ ]
+" let g:rbpt_colorpairs = [
+"       \ ['brown',       '#458588'],
+"       \ ['Darkblue',    '#b16286'],
+"       \ ['darkgray',    '#cc241d'],
+"       \ ['darkgreen',   '#d65d0e'],
+"       \ ['darkcyan',    '#458588'],
+"       \ ['darkred',     '#b16286'],
+"       \ ['darkmagenta', '#cc241d'],
+"       \ ['brown',       '#d65d0e'],
+"       \ ['gray',        '#458588'],
+"       \ ['black',       '#b16286'],
+"       \ ['darkmagenta', '#cc241d'],
+"       \ ['Darkblue',    '#d65d0e'],
+"       \ ['darkgreen',   '#458588'],
+"       \ ['darkcyan',    '#b16286'],
+"       \ ['darkred',     '#cc241d'],
+"       \ ['red',         '#d65d0e'],
+"       \ ]
 
 " Tagbar: {{{2
 call s:HL('TagbarSignature', 'orange','faintOrange','NONE')
