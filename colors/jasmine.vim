@@ -173,6 +173,7 @@ call s:HL('Include', 'blue', 'NONE', 'NONE')
 call s:HL('Define', 'magenta', 'NONE', 'NONE')
 call s:HL('Macro', 'magenta', 'NONE', 'NONE')
 call s:HL('Function', 'magenta', 'NONE', 'bold')
+call s:HL('Directory', 'blue', 'NONE', 'bold')
 
 call s:HL('Statement', 'blue', 'NONE', 'NONE')
 call s:HL('Keyword', 'blue', 'NONE', 'NONE')
