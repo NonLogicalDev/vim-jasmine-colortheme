@@ -198,7 +198,7 @@ call s:HL('Structure', 'red', 'NONE', 'NONE')
 call s:HL('SpecialKey', 'dark4', 'light2', 'NONE')
 call s:HL('Tag', 'blue', 'NONE', 'NONE')
 call s:HL('Title', 'dark1', 'NONE', 'bold')
-call s:HL('Todo', 'dark3', 'NONE', 'inverse, bold')
+call s:HL('Todo', 'red', 'NONE', 'inverse, bold')
 
 " }}}1
 " Filetype Specific: {{{1
