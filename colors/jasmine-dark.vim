@@ -145,7 +145,7 @@ call s:HL('FoldColumn', 'blue', 'dark1', 'bold')
 call s:HL('SignColumn', 'blue', 'dark2', 'bold')
 
 " Paranthesis: {{{2
-call s:HL('MatchParen', 'red','NONE','NONE')
+call s:HL('MatchParen', 'red','NONE','inverse,underline')
 
 " Search: {{{2
 call s:HL('IncSearch', 'green','faintGreen','NONE')
@@ -329,6 +329,8 @@ call s:HL('hs_hlFunctionName', 'blue' , 'faintBlue', 'NONE')
 call s:HL('hs_DeclareFunction', 'green' , 'faintBlue', 'bold')
 call s:HL('hsType', 'red' , 'NONE', 'NONE')
 call s:HL('hsDelimiter', 'green' , 'faintBlue', 'NONE')
+" Tex: {{{2
+call s:HL('texTypeStyle', 'dark2' , 'NONE', 'NONE')
 " }}}1
 " Plugins: {{{1
 " Ycm: {{{2
