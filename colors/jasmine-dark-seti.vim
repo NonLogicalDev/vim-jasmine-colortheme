@@ -337,6 +337,7 @@ call s:HL('cssBraces', 'dark4','NONE','NONE')
 " Vim: {{{2
 call s:HL('vimCommentTitle', 'red','NONE','NONE')
 call s:HL('vimIsCommand', 'blue','NONE','NONE')
+call s:HL('vimUserFunc', 'blue','NONE','NONE')
 " MakeFile:
 call s:HL('makeStatement', 'magenta' , 'NONE', 'NONE')
 call s:HL('makeCommands', 'magenta' , 'NONE', 'NONE')
