@@ -184,7 +184,7 @@ call s:HL('Special', 'blue', 'NONE', 'NONE')
 call s:HL('Comment', 'commentfg', 'NONE', 'NONE')
 call s:HL('PreProc', 'blue', 'NONE', 'NONE')
 call s:HL('PreCondit', 'blue', 'NONE', 'NONE')
-call s:HL('Include', 'blue', 'NONE', 'NONE')
+call s:HL('Include', 'green', 'NONE', 'NONE')
 call s:HL('Define', 'magenta', 'NONE', 'NONE')
 call s:HL('Macro', 'magenta', 'NONE', 'NONE')
 call s:HL('Function', 'blue', 'NONE', 'bold')
@@ -198,11 +198,11 @@ call s:HL('Repeat', 'blue', 'NONE', 'NONE')
 call s:HL('Operator', 'magenta', 'NONE', 'NONE')
 call s:HL('Identifier', 'blue', 'NONE', 'NONE')
 
-call s:HL('StorageClass', 'red', 'NONE', 'NONE')
+call s:HL('StorageClass', 'yellow', 'NONE', 'NONE')
 call s:HL('Typedef', 'red', 'NONE', 'NONE')
-call s:HL('Type', 'red', 'NONE', 'NONE')
+call s:HL('Type', 'magenta', 'NONE', 'NONE')
 call s:HL('Constant', 'NONE', 'NONE', 'NONE')
-call s:HL('Boolean', 'NONE', 'NONE', 'NONE')
+call s:HL('Boolean', 'red', 'NONE', 'NONE')
 call s:HL('Number', 'blue', 'NONE', 'NONE')
 call s:HL('Float', 'blue', 'NONE', 'NONE')
 call s:HL('Character', 'NONE', 'NONE', 'NONE')
@@ -222,6 +222,14 @@ call s:HL('DiffDelete', 'NONE' , 'faintRed', 'NONE')
 call s:HL('DiffAdd', 'NONE' ,    'faintGreen', 'NONE')
 call s:HL('DiffChange', 'NONE' , 'faintOrange', 'NONE')
 call s:HL('DiffText', 'NONE' , 'NONE', 'NONE')
+" C: {{{2
+call s:HL('cType', 'yellow' , 'NONE', 'NONE')
+call s:HL('cStatement', 'green' , 'NONE', 'NONE')
+call s:HL('objcClass', 'red' , 'NONE', 'NONE')
+call s:HL('objcString', 'blue' , 'NONE', 'NONE')
+call s:HL('objcMethodCall', 'blue' , 'NONE', 'NONE')
+call s:HL('objcException', 'green' , 'NONE', 'NONE')
+call s:HL('cocoaClass', 'red' , 'NONE', 'NONE')
 
 " Ruby: {{{2
 call s:HL('rubyClass', 'magenta','NONE','NONE')
@@ -400,6 +408,9 @@ call s:HL('TagbarVisibilityPublic', 'green','NONE','NONE')
 call s:HL('TagbarVisibilityPrivate', 'red','NONE','NONE')
 call s:HL('TagbarVisibilityProtected', 'magenta','NONE','NONE')
 
+" NerdTree: {{{2
+call s:HL('NERDTreeCWD', 'blue')
+call s:HL('NERDTreeLinkDir', 'blue')
 " }}}1
 
 " vim:foldmethod=marker
