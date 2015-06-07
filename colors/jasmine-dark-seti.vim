@@ -234,10 +234,10 @@ call s:HL('cocoaClass', 'red' , 'NONE', 'NONE')
 " Ruby: {{{2
 call s:HL('rubyClass', 'magenta','NONE','NONE')
 call s:HL('rubyModule', 'magenta','NONE','NONE')
-call s:HL('rubyFunction', 'NONE','NONE','bold')
+call s:HL('rubyLocalVariableOrMethod', 'yellow','NONE','bold')
 call s:HL('rubyInterpolationDelimiter', 'NONE','NONE','NONE')
 call s:HL('rubySymbol', 'green','NONE','NONE')
-call s:HL('rubyConstant', 'NONE','NONE','NONE')
+call s:HL('rubyConstant', 'red','NONE','NONE')
 call s:HL('rubyStringDelimiter', 'lightOrange','NONE','NONE')
 call s:HL('rubyInterpolation', 'NONE','NONE','NONE')
 call s:HL('rubyInterpolationDelimiter', 'green','NONE','NONE')
@@ -252,7 +252,7 @@ call s:HL('rubyControl', 'magenta','NONE','NONE')
 call s:HL('rubyClassVariable', 'NONE','NONE','NONE')
 call s:HL('rubyOperator', 'blue','NONE','NONE')
 call s:HL('rubyException', 'blue','NONE','NONE')
-call s:HL('rubyPseudoVariable', 'NONE','NONE','NONE')
+call s:HL('rubyPseudoVariable', 'yellow','NONE','NONE')
 call s:HL('rubyRailsUserClass', 'NONE','NONE','NONE')
 call s:HL('rubyRailsARAssociationMethod', 'NONE','NONE','NONE')
 call s:HL('rubyRailsARMethod', 'NONE','NONE','NONE')
@@ -261,6 +261,7 @@ call s:HL('rubyRailsMethod', 'NONE','NONE','NONE')
 call s:HL('erubyDelimiter', 'NONE','NONE','NONE')
 call s:HL('erubyComment', 'dark3','NONE','NONE')
 call s:HL('erubyRailsMethod', 'NONE','NONE','NONE')
+call s:HL('rubyFunction', 'blue','NONE','bold')
 
 " SQL: {{{2 
 call s:HL('sqlStatement', 'magenta','NONE','NONE')
@@ -368,6 +369,8 @@ call s:HL('texInputFileOpt', 'green' , 'NONE', 'NONE')
 call s:HL('texInputFile', 'red' , 'NONE', 'NONE')
 call s:HL('texDocType', 'blue' , 'NONE', 'NONE')
 call s:HL('texDocTypeArgs', 'green' , 'NONE', 'NONE')
+" Python: {{{2
+call s:HL('pythonException', 'magenta' , 'NONE', 'NONE')
 " }}}1
 " Plugins: {{{1
 " Ycm: {{{2
