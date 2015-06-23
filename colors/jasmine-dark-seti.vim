@@ -43,6 +43,7 @@ let s:ce.light1       = ['#FAFAFA', 231]
 let s:ce.light0       = ['#FFFFFF', 231]
 
 let s:ce.red          = ['#CD3B46', 167]
+let s:ce.lightRed     = ['#F53758', 52]
 let s:ce.faintRed     = ['#581420', 52]
 
 let s:ce.orange       = ['#D77725', 130]
@@ -50,9 +51,11 @@ let s:ce.lightOrange  = ['#E49953', 173]
 let s:ce.faintOrange  = ['#261506', 52]
 
 let s:ce.yellow       = ['#E6D26C', 184]
+let s:ce.lightYellow  = ['#F5E943', 52]
 let s:ce.faintYellow  = ['#434013', 52]
 
 let s:ce.green        = ['#A4D059', 64]
+let s:ce.lightGreen   = ['#BBEE65', 22]
 let s:ce.faintGreen   = ['#3B4B20', 22]
 
 let s:ce.blue         = ['#59B4D8', 61]
@@ -60,12 +63,18 @@ let s:ce.lightBlue    = ['#53A0CD', 74]
 let s:ce.faintBlue    = ['#242D33', 231]
 
 let s:ce.magenta      = ['#A373C7', 97]
+let s:ce.lightMagenta = ['#C7A0EC', 53]
 let s:ce.darkMagenta  = ['#9175AC', 53]
 let s:ce.faintMagenta = ['#2D2536', 16]
 
 let s:ce.cursor       = ['#0F617F', 24]
 " }}}
 " Highlighting Function: {{{
+function! s:HLC(cname)
+  let c = get(s:ce, a:cname)
+  return c[0]
+endfunction
+
 function! s:HL(group, fg, ...)
 	" Arguments: group, guifg, guibg, gui, guisp
 
@@ -415,5 +424,39 @@ call s:HL('TagbarVisibilityProtected', 'magenta','NONE','NONE')
 call s:HL('NERDTreeCWD', 'blue')
 call s:HL('NERDTreeLinkDir', 'blue')
 " }}}1
+
+" NeoVim Terminal Support
+
+" Black
+let g:terminal_color_8  = s:HLC('dark2')
+let g:terminal_color_0  = s:HLC('dark1')
+
+" White
+let g:terminal_color_15 = s:HLC('textfg')
+let g:terminal_color_7  = s:HLC('light4')
+
+" Red
+let g:terminal_color_9  = s:HLC('lightRed')
+let g:terminal_color_1  = s:HLC('red')
+
+" Green
+let g:terminal_color_10  = s:HLC('lightGreen')
+let g:terminal_color_2 = s:HLC('green')
+
+" Yellow
+let g:terminal_color_11  = s:HLC('lightYellow')
+let g:terminal_color_3 = s:HLC('yellow')
+
+" Blue
+let g:terminal_color_12  = s:HLC('lightBlue')
+let g:terminal_color_4 = s:HLC('blue')
+
+" Purple
+let g:terminal_color_13  = s:HLC('lightMagenta')
+let g:terminal_color_5 = s:HLC('magenta')
+
+" Cyan
+let g:terminal_color_14  = '#0b939b'
+let g:terminal_color_6 = '#00f5e9'
 
 " vim:foldmethod=marker
