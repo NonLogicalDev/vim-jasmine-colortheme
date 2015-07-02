@@ -16,8 +16,8 @@ let g:colors_name = "JasmineDarkSeti"
 " Color Pallette: {{{
 let s:ce = {}
 
-let s:ce.txtbg = ['#111314', 16]
-let s:ce.txtfg = ['#D6D9D8', 16]
+let s:ce.txtbg = ['#18191A', 16]
+let s:ce.txtfg = ['#C9D9D8', 16]
 
 let s:ce.linnrbg = ['#0A0C0C', 16]
 let s:ce.linnrfg = ['#323D46', 16]
@@ -46,8 +46,8 @@ let s:ce.red          = ['#CD3B46', 167]
 let s:ce.lightRed     = ['#F53758', 52]
 let s:ce.faintRed     = ['#581420', 52]
 
-let s:ce.orange       = ['#D77725', 130]
-let s:ce.lightOrange  = ['#E49953', 173]
+let s:ce.orange       = ['#D3602E', 130]
+let s:ce.lightOrange  = ['#E07D49', 173]
 let s:ce.faintOrange  = ['#261506', 52]
 
 let s:ce.yellow       = ['#E6D26C', 184]
@@ -210,7 +210,7 @@ call s:HL('Identifier', 'blue', 'NONE', 'NONE')
 call s:HL('StorageClass', 'yellow', 'NONE', 'NONE')
 call s:HL('Typedef', 'red', 'NONE', 'NONE')
 call s:HL('Type', 'magenta', 'NONE', 'NONE')
-call s:HL('Constant', 'NONE', 'NONE', 'NONE')
+call s:HL('Constant', 'red', 'NONE', 'NONE')
 call s:HL('Boolean', 'red', 'NONE', 'NONE')
 call s:HL('Number', 'blue', 'NONE', 'NONE')
 call s:HL('Float', 'blue', 'NONE', 'NONE')
@@ -222,7 +222,7 @@ call s:HL('Structure', 'green', 'NONE', 'NONE')
 call s:HL('SpecialKey', 'dark4', 'light2', 'NONE')
 call s:HL('Tag', 'blue', 'NONE', 'NONE')
 call s:HL('Title', 'dark4', 'NONE', 'bold')
-call s:HL('Todo', 'dark3', 'NONE', 'inverse, bold')
+call s:HL('Todo', 'txtfg', 'NONE', 'bold')
 
 " }}}1
 " Filetype Specific: {{{1
